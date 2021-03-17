@@ -1,0 +1,13 @@
+{
+  "name": "first",
+  "version": "1.0.0",
+  "description": "the first project ",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "lite-server": "^2.6.1"
+  },
+  "scripts": {
+    "start": "lite-server"
+  }
+}

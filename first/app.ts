@@ -1,13 +1,16 @@
-interface User {
-  name: string;
-  age: number;
-  hobbies: string[];
+// Union Types
+function combine(input1: number | string, input2: number | string) {
+  let result;
+  if (typeof input1 === 'number' && typeof input2 === 'number') {
+    result = input1 + input2;
+  } else {
+    result = input1.toString() + input2.toString();
+  }
+  return result;
 }
 
-const person: User = {
-  name: 'Dax',
-  age: 30,
-  hobbies: ['Sports', 'Cooking'],
-};
+const combineAges = combine(30, 32);
+console.log(combineAges);
 
-console.log(person.hobbies[0]);
+const combineNames = combine('Dax ', 'code');
+console.log(combineNames);
